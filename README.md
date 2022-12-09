@@ -1,2 +1,2 @@
 # goit-markup-hw-08
-Repository for a homework number eight
+This repository for my homework number eight

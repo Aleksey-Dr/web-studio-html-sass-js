@@ -1,0 +1,134 @@
+.title-label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-family: inherit;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+
+  /* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
+}
+
+.input-modal {
+  transition: border var(--timing-function);
+  width: 100%;
+  height: 40px;
+  padding: 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-input {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill var(--timing-function);
+  width: 18px;
+  height: 18px;
+
+  fill: var(--title-text-color);
+}
+
+// scss
+.input-modal,
+.comment-modal:focus {
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.input-modal:focus + .icon-input {
+  fill: var(--accent-color);
+}
+
+// scss
+.comment-modal {
+  transition: border var(--timing-function);
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+
+  resize: none;
+
+  &::placeholder {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+// scss
+.check-convention {
+  margin-bottom: 30px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: var(--accent-color);
+  }
+
+  .icon-wrapper {
+    display: flex;
+    padding: 3px 1px 2px 2px;
+    margin-right: 8px;
+    margin-left: 12px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+  }
+
+  input {
+    &:checked + label .icon-wrapper {
+      border: none;
+      background-color: var(--accent-color);
+    }
+
+    &:checked + label .icon-bird {
+      fill: #ffffff;
+    }
+  }
+}
+
+.icon-bird {
+  fill: transparent;
+}

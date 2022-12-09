@@ -1,0 +1,23 @@
+.subscribe {
+  margin-left: auto;
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__title {
+    display: block;
+    width: 207px;
+    margin-bottom: 20px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}

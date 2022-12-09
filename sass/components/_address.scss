@@ -1,0 +1,28 @@
+.address {
+  margin-right: 70px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__link {
+    transition: color var(--timing-function);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+
+    &--color {
+      color: #ffffff;
+    }
+  }
+}
