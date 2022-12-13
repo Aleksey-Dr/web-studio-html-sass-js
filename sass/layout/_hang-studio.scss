@@ -1,27 +1,65 @@
 .hang-section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 
   &__list {
-    display: flex;
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: 270px;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 450px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (max-width: 1199px) {
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
 
     &::before {
       display: block;
       margin-bottom: 30px;
       content: "";
       height: 120px;
-      width: 270px;
+      width: 100%;
 
       background-color: #f5f4fa;
       background-repeat: no-repeat;
       background-position: center;
     }
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
 
@@ -47,18 +85,20 @@
     margin-top: 0;
     margin-bottom: 10px;
 
+    text-align: center;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
   }
 
   &__description {
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
