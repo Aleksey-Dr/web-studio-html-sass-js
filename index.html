@@ -67,6 +67,12 @@
             >
           </li>
         </ul>
+        <button type="button" class="button-menu  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Mobile menu switcher">
+            <use class="button-menu--icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+            <use class="button-menu--icon-cross" href="./images/icons.svg#icon-close_24px"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -612,6 +618,26 @@
       </div>
     </footer>
 
+    <!-- MENU WINDOW -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button-menu js-close-menu"></button>
+      <ul class="">
+            <li class="">
+              <a
+                href="./index.html"
+                class=""
+                >Студія</a
+              >
+            </li>
+            <li class="">
+              <a href="./portfolio.html" class="">Портфоліо</a>
+            </li>
+            <li class="">
+              <a href="" class="">Контакти</a>
+            </li>
+          </ul>
+    </div>
+
     <!-- MODAL WINDOW -->
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal-window">
@@ -688,5 +714,6 @@
 
     <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
