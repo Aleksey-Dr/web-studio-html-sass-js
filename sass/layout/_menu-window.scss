@@ -1,0 +1,15 @@
+.menu-container {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    
+    background-color: #ffffff;
+    padding: 48px 40px;
+
+    &.is-open {
+        display: block;
+    }
+}
