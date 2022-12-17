@@ -1,15 +1,50 @@
-.menu-container {
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  transition: fill var(--timing-function);
+
+  @media (min-width: $tablet) {
     display: none;
+  }
+}
 
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #ffffff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform var(--timing-function);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
     position: absolute;
-    top: 100%;
-    left: 0%;
-    width: 100%;
-    
-    background-color: #ffffff;
-    padding: 48px 40px;
-
-    &.is-open {
-        display: block;
-    }
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
 }
