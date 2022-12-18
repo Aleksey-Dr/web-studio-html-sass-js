@@ -50,7 +50,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -724,12 +724,12 @@ img {
 
 .menu-container {
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  flex-direction: column;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
-  height: 796px;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -761,9 +761,6 @@ img {
 .menu__nav-list .item:not(:last-child) {
   margin-bottom: 32px;
 }
-.menu__nav-list .item:last-child {
-  margin-bottom: 306px;
-}
 .menu__nav-list .link {
   color: var(--title-text-color);
   transition: color var(--timing-function);
@@ -772,6 +769,9 @@ img {
   color: var(--accent-color);
 }
 
+.menu__contacts {
+  margin-top: auto;
+}
 .menu__contacts--tel {
   margin-bottom: 32px;
   font-family: inherit;
@@ -783,7 +783,6 @@ img {
 .menu__contacts--tel .link {
   color: var(--accent-color);
 }
-
 .menu__contacts--mail {
   font-family: inherit;
   font-style: normal;
@@ -798,7 +797,7 @@ img {
 
 .menu__social-links {
   display: flex;
-  margin-top: auto;
+  margin-top: 64px;
   font-family: inherit;
   font-weight: 500;
   font-size: 18px;
@@ -1195,23 +1194,19 @@ img {
   height: 100%;
   transition: opacity var(--timing-function), visibility var(--timing-function);
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 .modal-backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
-@media screen and (max-width: 1199px) {
-  .modal-backdrop {
-    overflow-y: scroll;
-  }
-}
 
 .modal-window {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 450px;
   height: 609px;
   padding: 40px;
@@ -1222,6 +1217,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal-window {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
   }
@@ -1280,7 +1278,7 @@ img {
 }
 .portfolio__container .link:hover .project-thumb::before, .portfolio__container .link:focus .project-thumb::before, .portfolio__container .link:hover .portfolio__description, .portfolio__container .link:focus .portfolio__description {
   transform: translateY(0);
-  font-family: "Roboto", sans-serif;
+  font-family: inherit, sans-serif;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;

@@ -26,12 +26,12 @@
 
 .menu-container {
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  flex-direction: column;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
-  height: 796px;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -66,10 +66,6 @@
     &:not(:last-child) {
       margin-bottom: 32px;
     }
-
-    &:last-child {
-      margin-bottom: 306px;
-    }
   }
 
   .link {
@@ -84,35 +80,39 @@
   }
 }
 
-.menu__contacts--tel {
-  margin-bottom: 32px;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
-  letter-spacing: 0.02em;
+.menu__contacts {
+  margin-top: auto;
 
-  .link {
-    color: var(--accent-color);
+  &--tel {
+    margin-bottom: 32px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    .link {
+      color: var(--accent-color);
+    }
   }
-}
 
-.menu__contacts--mail {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
+  &--mail {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
 
-  .link {
-    color: var(--primary-text-color);
+    .link {
+      color: var(--primary-text-color);
+    }
   }
 }
 
 .menu__social-links {
   display: flex;
-  margin-top: auto;
+  margin-top: 64px;
 
   font-family: inherit;
   font-weight: 500;

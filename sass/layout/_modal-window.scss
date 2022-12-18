@@ -11,22 +11,20 @@
 
   background-color: rgba(0, 0, 0, 0.2);
 
+  overflow-y: scroll;
+
   &.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
   }
-
-  @media screen and (max-width: 1199px) {
-    overflow-y: scroll;
-  }
 }
 
 .modal-window {
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
 
   width: 450px;
   height: 609px;
@@ -40,6 +38,10 @@
   background-color: #ffffff;
 
   @media screen and (min-width: $desktop) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
     width: 528px;
     height: 581px;
   }
