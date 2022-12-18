@@ -15,17 +15,22 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 450px;
+  max-width: 290px;
 
   &__item {
-    height: 92px;
-    width: 210px;
+    height: 60px;
+    width: 130px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 
     transition: border var(--timing-function);
 
     background-color: #ffffff;
+
+    @media screen and (min-width: $mobile) {
+      width: 210px;
+      height: 92px;
+    }
 
     &:hover,
     &:focus {
@@ -87,5 +92,17 @@
     transition: fill var(--timing-function);
 
     fill: currentColor;
+  }
+
+  @media screen and (min-width: $mobile) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 738px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1170px;
   }
 }

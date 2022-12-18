@@ -369,7 +369,7 @@ img {
 }
 
 .email-fild {
-  width: 450px;
+  width: 290px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -383,6 +383,11 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .email-fild {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email-fild {
@@ -1000,7 +1005,7 @@ img {
   }
 }
 .our-team__card {
-  width: 450px;
+  max-width: 450px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1018,7 +1023,7 @@ img {
     margin-right: 30px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .our-team__card:nth-child(-n+2) {
     margin-bottom: 30px;
   }
@@ -1084,15 +1089,21 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 450px;
+  max-width: 290px;
 }
 .customers__item {
-  height: 92px;
-  width: 210px;
+  height: 60px;
+  width: 130px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--timing-function);
   background-color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .customers__item {
+    width: 210px;
+    height: 92px;
+  }
 }
 .customers__item:hover, .customers__item:focus {
   border: 1px solid var(--accent-color);
@@ -1142,6 +1153,21 @@ img {
   height: 60px;
   transition: fill var(--timing-function);
   fill: currentColor;
+}
+@media screen and (min-width: 480px) {
+  .customers {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    max-width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    max-width: 1170px;
+  }
 }
 
 /* FOOTER */

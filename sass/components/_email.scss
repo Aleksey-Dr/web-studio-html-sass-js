@@ -1,5 +1,5 @@
 .email-fild {
-  width: 450px;
+  width: 290px;
   height: 50px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -17,6 +17,9 @@
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
 
   @media screen and (min-width: $desktop) {
     width: 358px;
