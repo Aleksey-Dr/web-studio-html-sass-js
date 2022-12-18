@@ -20,7 +20,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 450px;
+    max-width: 450px;
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {

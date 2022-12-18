@@ -15,13 +15,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 450px;
+  max-width: 450px;
 
   &__item {
     height: 92px;
     width: 210px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    margin-right: 0;
 
     transition: border var(--timing-function);
 
@@ -32,9 +33,9 @@
       border: 1px solid var(--accent-color);
     }
 
-    @media screen and (max-width: 767px) {
-      &:nth-child(-n + 4) {
-        margin-bottom: 30px;
+    @media screen and (min-width: $mobile) {
+      &:nth-child(5) {
+        margin-bottom: 0;
       }
 
       &:nth-child(2n + 1) {

@@ -1,9 +1,4 @@
 .product-section {
-
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
-
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -13,7 +8,7 @@
 
   &__item {
     display: block;
-    width: 370px;
+    max-width: 370px;
 
     &:not(:last-child) {
       margin-right: 30px;
@@ -46,5 +41,9 @@
     text-transform: uppercase;
 
     color: #ffffff;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 }
