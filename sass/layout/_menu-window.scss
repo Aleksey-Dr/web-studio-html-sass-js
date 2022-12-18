@@ -14,7 +14,7 @@
 
   transition: fill var(--timing-function);
 
-  @media (min-width: $tablet) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -48,6 +48,10 @@
     top: 16px;
     right: 16px;
     color: #fff;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 

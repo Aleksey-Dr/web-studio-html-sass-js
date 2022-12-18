@@ -1,21 +1,18 @@
 .contacts {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  display: flex;
   margin-left: auto;
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+      margin-bottom: 0;      
+    }
   }
 
   &__link {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     transition: color var(--timing-function);
 
@@ -35,6 +32,12 @@
     &--footer {
       color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: $desktop) {
+      justify-content: center;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__icon {
@@ -53,5 +56,13 @@
 
       fill: currentColor;
     }
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
   }
 }
