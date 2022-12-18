@@ -91,6 +91,10 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
 
+    @media screen and (max-width: 479px) {
+      font-size: 24px;
+    }
+
     .link {
       color: var(--accent-color);
     }
@@ -119,6 +123,10 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 
   .item {
     &:not(:last-child) {
