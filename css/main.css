@@ -1099,7 +1099,7 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 290px;
+  max-width: 450px;
 }
 .customers__item {
   height: 60px;
