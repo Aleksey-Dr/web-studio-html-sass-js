@@ -1,13 +1,27 @@
 .subscribe {
-  margin-left: auto;
+  padding-top: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+    margin-left: auto;
+  }
 
   &__form {
-    display: flex;
-    align-items: flex-end;
+    
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      align-items: flex-end;
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
-    display: block;
+    display: inline-block;
     width: 207px;
     margin-bottom: 20px;
 
@@ -19,5 +33,9 @@
     text-transform: uppercase;
 
     color: #ffffff;
+
+    @media screen and (min-width: $desktop) {
+      display: block;
+    }
   }
 }

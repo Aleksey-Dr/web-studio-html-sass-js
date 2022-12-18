@@ -32,8 +32,6 @@
 
 // FOOTER
 .button-subscribe {
-  display: flex;
-  align-items: center;
   width: 200px;
   height: 50px;
 
@@ -54,6 +52,11 @@
   letter-spacing: 0.06em;
 
   color: #ffffff;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 // MODAL WINDOW

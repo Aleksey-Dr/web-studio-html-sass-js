@@ -1,9 +1,17 @@
 .address {
-  margin-right: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
   }
 

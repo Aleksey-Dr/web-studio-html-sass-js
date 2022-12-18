@@ -1,0 +1,9 @@
+.join {
+    @media screen and (min-width: $tablet) {
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 0;
+    }
+}
