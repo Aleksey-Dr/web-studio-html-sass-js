@@ -43,21 +43,20 @@ img {
 
 .container {
   box-sizing: border-box;
+  max-width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   /* Centering */
   margin: 0 auto;
 
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
+  // tablet screen 768px
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
 
+  // desktop screen 1200px
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    max-width: $desktop;
   }
 }
 
