@@ -42,6 +42,7 @@ img {
 }
 
 .container {
+  // phone screen 0px & >
   box-sizing: border-box;
   max-width: 480px;
   padding-right: 15px;
@@ -49,12 +50,12 @@ img {
   /* Centering */
   margin: 0 auto;
 
-  // tablet screen 768px
+  // tablet screen 768px & >
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
   }
 
-  // desktop screen 1200px
+  // desktop screen 1200px & >
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
