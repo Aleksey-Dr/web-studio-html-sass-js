@@ -1060,13 +1060,12 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 .our-team__description {
   padding-top: 30px;
-  padding-right: 122px;
   padding-bottom: 24px;
-  padding-left: 122px;
 }
 @media screen and (min-width: 768px) {
   .our-team__description {
@@ -1272,7 +1271,7 @@ img {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
