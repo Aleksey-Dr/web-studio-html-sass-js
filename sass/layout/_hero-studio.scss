@@ -1,8 +1,8 @@
 .hero-section {
   max-width: 1600px;
-  min-height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  min-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
 
@@ -35,6 +35,12 @@
       font-size: 44px;
       line-height: 1.62;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
