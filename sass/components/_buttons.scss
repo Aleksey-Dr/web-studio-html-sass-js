@@ -70,8 +70,6 @@
   top: 8px;
   right: 8px;
 
-  transition: background-color var(--timing-function);
-
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -80,17 +78,20 @@
   cursor: pointer;
   background-color: inherit;
 
+  transition: background-color var(--timing-function);
+
   &:hover .button__icon-close {
     fill: var(--accent-color);
   }
 }
 
 .button__icon-close {
-  transition: fill var(--timing-function);
   width: 18px;
   height: 18px;
 
   fill: #000000;
+
+  transition: fill var(--timing-function);
 }
 
 .button-container {

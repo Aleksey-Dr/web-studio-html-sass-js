@@ -19,6 +19,12 @@
   overflow: hidden;
 }
 
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -461,23 +467,23 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  transition: background-color var(--timing-function);
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
   background-color: inherit;
+  transition: background-color var(--timing-function);
 }
 .button__modal-window--close:hover .button__icon-close {
   fill: var(--accent-color);
 }
 
 .button__icon-close {
-  transition: fill var(--timing-function);
   width: 18px;
   height: 18px;
   fill: #000000;
+  transition: fill var(--timing-function);
 }
 
 .button-container {
@@ -602,14 +608,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.comment-modal:-ms-input-placeholder {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
 .comment-modal::placeholder {
   font-family: inherit;
   font-weight: 400;
@@ -644,8 +642,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-color);
 }
 .check-convention .icon-wrapper {
